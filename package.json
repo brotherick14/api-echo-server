@@ -15,8 +15,14 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test && npm run lint"
+    }
+  },
   "devDependencies": {
     "chai": "^4.3.7",
+    "husky": "^8.0.3",
     "mocha": "^10.2.0",
     "nodemon": "^2.0.22",
     "sinon": "^15.1.2",
