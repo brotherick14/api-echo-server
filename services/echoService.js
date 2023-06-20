@@ -5,7 +5,13 @@ const echoService = {
   filesData: async (req, res) => {
     try {
       const response = await axiosInstance.get('/secret/files')
-      const { fileName } = req.query
+      let { fileName } = req.query
+      if (fileName) {
+        fileName = fileName.toLowerCase()
+        if (!fileName.endsWith('.csv')) {
+          fileName += '.csv'
+        }
+      }
       // Filtrar archivos si se proporciona un nombre de archivo específico
       const filteredFiles = fileName
         ? response.data.files.filter((file) => file === fileName)
@@ -15,6 +21,7 @@ const echoService = {
       res.setHeader('Content-Type', 'application/json')
       res.status(200).json(formattedData)
     } catch (error) {
+      console.log(error)
       console.error('Error downloading files')
       res.status(500).json({ error: 'An error occurred' })
     }
