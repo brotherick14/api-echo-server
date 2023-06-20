@@ -5,6 +5,8 @@ Este proyecto es una API construida con Node.js. Utiliza la librería axios para
 ## ¿Qué hace esta API?
   
 - **Route (`/files/data`)**: Esta ruta realiza una solicitud GET a un servicio externo para obtener una lista de nombres de archivos. Luego, para cada archivo, se realiza una nueva solicitud GET para obtener los datos del archivo. El contenido del archivo, en formato CSV, se procesa línea por línea. Cada línea se divide en columnas, y si la línea tiene al menos 4 columnas, se recogen y validan los datos de las columnas específicas. Los datos procesados se empaquetan en un objeto y se agregan a una lista. La lista de todos los datos procesados se devuelve como respuesta en formato JSON.
+- **Route (`/files/data?fileName={nombre}`)**: Esta ruta permite filtrar los archivos por nombre mediante el parámetro de consulta fileName en la ruta. Esto permite obtener solo los datos de un archivo específico en lugar de todos los archivos disponibles.
+- **Route (`/files/list`)**: Esta ruta realiza una solicitud GET a un servicio externo para obtener una lista de nombres de archivos.
 
 ## ¿Cómo correr este proyecto?
 
