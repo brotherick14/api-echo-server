@@ -41,12 +41,12 @@ Este proyecto es una API construida con Node.js. Utiliza la librería axios para
 
 1. **Construye la imagen Docker**: 
     ```
-    docker build -t nombre-de-tu-imagen .
+    docker build -t api-echo-server .
     ```
 
 2. **Corre el contenedor Docker**: 
     ```
-    docker run -p 3000:3000 nombre-de-tu-imagen
+    docker run -p 3000:3000 api-echo-server
     ```
 
 El servidor debería estar corriendo en http://localhost:3000.
