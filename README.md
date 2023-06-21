@@ -2,6 +2,12 @@
 
 Este proyecto es una API construida con Node.js. Utiliza la librería axios para realizar solicitudes HTTP a un servicio externo que provee archivos en formato CSV. La API procesa los datos de los archivos y devuelve la información procesada en formato JSON.
 
+# Postman collection
+Puedes usar este link para acceder a la colección de postman y ejectuar los endpoints una vez hayas corrido este repositorio en docker.
+[Postman Collection Link]([/guides/content/editing-an-existing-page](https://www.postman.com/brotherick/workspace/echo-server/collection/1584350-79771696-b476-415b-bb55-c76ef034dcbe?action=share&creator=1584350))
+
+
+O corre la colección en tu perfil
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/1584350-79771696-b476-415b-bb55-c76ef034dcbe?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D1584350-79771696-b476-415b-bb55-c76ef034dcbe%26entityType%3Dcollection%26workspaceId%3D06b98e37-7532-4ce6-857e-b894a188b916)
 
 ## ¿Qué hace esta API?
