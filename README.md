@@ -50,3 +50,22 @@ Este proyecto es una API construida con Node.js. Utiliza la librería axios para
     ```
 
 El servidor debería estar corriendo en http://localhost:3000.
+
+### Comandos disponibles:
+
+1. **Ejecuta los tests con mocha + chai**: 
+    ```
+    npm run test
+    ```
+
+2. **Ejecuta la validacion con lint usando standardjs**: 
+    ```
+    npm run lint
+    ```
+
+3. **Inicia la aplicacion**: 
+    ```
+    npm run start
+    ```
+
+La aplicación utliza husky para validar con precommits los test y lint antes de poder subir cambios.
